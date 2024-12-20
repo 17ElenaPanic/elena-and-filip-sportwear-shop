@@ -1,0 +1,194 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+i,
+ul,
+li,
+form,
+label,
+article,
+canvas,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+input {
+  background: none;
+  border: none;
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+select:active {
+  outline: none;
+  box-shadow: none;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(../fonts/Lato-Regular\ .woff2);
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(../fonts/Lato-Bold\ .woff2);
+}
+@font-face {
+  font-family: "Lato-Black";
+  src: url(../fonts/Lato-Black.woff2);
+}
+@font-face {
+  font-family: "Lato-Italic";
+  src: url(../fonts/Lato-Italic.woff2);
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../fonts/Roboto-Black.woff2);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.woff2);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.woff2);
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header .navBar {
+  background-color: rgb(236, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 50px;
+}
+header .navBar a {
+  padding-right: 10px;
+}
+header .secondNavBar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+header .secondNavBar .thirdNavSection {
+  display: flex;
+}
+header .secondNavBar .thirdNavSection form {
+  background-color: rgb(236, 235, 235);
+  width: 100px;
+  border-radius: 30px;
+  padding: 5px;
+}
+header .secondNavBar .thirdNavSection form .formContainer {
+  display: flex;
+}
+
+.holiday-discount-section {
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(236, 235, 235);
+  text-align: center;
+}
+.holiday-discount-section p span {
+  text-decoration: underline;
+  font-family: "Roboto-Bold";
+}
+
+.latest-greatest-section {
+  padding: 30px;
+}
+.latest-greatest-section .latest-greatest-h2 {
+  font-family: "Roboto-Bold";
+  font-size: 25px;
+  margin: 0px 0px 10px 10px;
+}
+.latest-greatest-section .latest-greatest-gallery {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  overflow: auto;
+}
+.latest-greatest-section .latest-greatest-gallery img {
+  margin: 0px 5px 30px 5px;
+}/*# sourceMappingURL=main.css.map */
