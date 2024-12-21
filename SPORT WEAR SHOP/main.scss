@@ -321,16 +321,27 @@ header{
   .latest-greatest-h2{
    font-family: $font-roboto-bold;
    font-size: $font-medium;
-   margin: 0px 0px 10px 10px;
+   margin: 0 auto;
+   padding: 20px;
   }
   .latest-greatest-gallery{
     display: flex;
-    align-items: flex-start;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 20px;
     overflow: auto;
-     img{
-      margin:0px 5px 30px 5px;
+     
+  .card-container-latest-greatest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+      margin: 0 auto;
      }
+    .h2{
+      font-size: $font-medium;
+      font-family: $font-roboto-regular;
+    }
+  }
 }
 
 }
