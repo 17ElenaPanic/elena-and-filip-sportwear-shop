@@ -1,11 +1,15 @@
 //SCROLL BUTTONS LEFT - RIGHT START
  // Get the gallery container and buttons
- const galleryContainer = document.getElementById('galleryContainer');
- const scrollLeftButton = document.getElementById('scrollLeft');
- const scrollRightButton = document.getElementById('scrollRight');
-
+ //const galleryContainer = document.getElementById('galleryContainer');
+ //const scrollLeftButton = document.getElementById('scrollLeft');
+ //const scrollRightButton = document.getElementById('scrollRight');
+ const galleryContainer= document.querySelector('.gallery')
+ const scrollLeftButton = document.querySelector('.left-btn')
+ const  scrollRightButton  = document.querySelector('.right-btn');
  // Define the scroll amount (e.g., how many pixels to scroll)
  const scrollAmount = 200;
+ console.log(scrollRightButton)
+
 
  // Function to update the button states based on the current scroll position
  function updateButtonStates() {
@@ -36,6 +40,7 @@
          left: -scrollAmount,
          behavior: 'smooth'
      });
+     console.log("clicked")
      updateButtonStates(); // Update button states after scrolling
  });
 
@@ -45,6 +50,7 @@
          left: scrollAmount,
          behavior: 'smooth'
      });
+     console.log("cliked")
      updateButtonStates(); // Update button states after scrolling
  });
  //SCROLL BUTTONS LEFT - RIGHT END

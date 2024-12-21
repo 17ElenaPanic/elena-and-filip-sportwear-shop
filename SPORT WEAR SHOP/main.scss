@@ -367,7 +367,7 @@ header{
 
   
 //Section Latest & Greatest
-.latest-greatest-section{
+.section{
   padding: 30px;
   .header-buttons-container{
    display: flex;
@@ -398,7 +398,7 @@ header{
      }
     }
   }
-  .latest-greatest-gallery{
+  .gallery{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 40px;
@@ -408,7 +408,7 @@ header{
       overflow-x: auto;
     }
      
-  .card-container-latest-greatest{
+  .card-container{
     display: grid;
     row-gap: 20px;
     h2{
@@ -420,6 +420,10 @@ header{
 }
 
 }
-
-
+//FOURTH SECTION TRENDING THIS WEEK
+  .h2-trending{
+   font-family: $font-roboto-bold;
+   font-size: $font-medium;
+   padding: 20px;
+  }
 //FOOTER
