@@ -259,39 +259,39 @@ header .secondNavBar .thirdNavSection form .formContainer {
   height: 35px;
 }
 
-.latest-greatest-section {
+.section {
   padding: 30px;
 }
-.latest-greatest-section .header-buttons-container {
+.section .header-buttons-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.latest-greatest-section .h2-latest-greatest {
+.section .h2-latest-greatest {
   font-family: "Roboto-Bold";
   font-size: 25px;
   padding: 20px;
 }
-.latest-greatest-section .buttons-container {
+.section .buttons-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
 }
-.latest-greatest-section .buttons-container button {
+.section .buttons-container button {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-inline: 10px;
   cursor: pointer;
 }
-.latest-greatest-section .buttons-container button:hover {
+.section .buttons-container button:hover {
   color: #707072;
 }
-.latest-greatest-section .buttons-container button:disabled {
+.section .buttons-container button:disabled {
   color: rgb(236, 235, 235);
 }
-.latest-greatest-section .latest-greatest-gallery {
+.section .gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   -moz-column-gap: 40px;
@@ -299,15 +299,21 @@ header .secondNavBar .thirdNavSection form .formContainer {
   padding: 20px;
   overflow: hidden;
 }
-.latest-greatest-section .latest-greatest-gallery:hover {
+.section .gallery:hover {
   overflow-x: auto;
 }
-.latest-greatest-section .latest-greatest-gallery .card-container-latest-greatest {
+.section .gallery .card-container {
   display: grid;
   row-gap: 20px;
 }
-.latest-greatest-section .latest-greatest-gallery .card-container-latest-greatest h2 {
+.section .gallery .card-container h2 {
   display: flex;
   font-size: 25px;
   font-family: "Roboto-Regular";
+}
+
+.h2-trending {
+  font-family: "Roboto-Bold";
+  font-size: 25px;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
