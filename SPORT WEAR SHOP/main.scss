@@ -113,6 +113,7 @@ section {
   font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -368,26 +369,50 @@ header{
 //Section Latest & Greatest
 .latest-greatest-section{
   padding: 30px;
-  .latest-greatest-h2{
+  .header-buttons-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  .h2-latest-greatest{
    font-family: $font-roboto-bold;
    font-size: $font-medium;
-   margin: 0 auto;
    padding: 20px;
   }
-  .latest-greatest-gallery{
+  .buttons-container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    overflow: auto;
+    button{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding-inline: 10px;
+     cursor: pointer;
+     &:hover{
+      color: $color-light-grey;
+     }
+     &:disabled{
+      color: $color-lightest-grey;
+     }
+    }
+  }
+  .latest-greatest-gallery{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 40px;
+    padding: 20px;
+    overflow: hidden;
+    &:hover{
+      overflow-x: auto;
+    }
      
   .card-container-latest-greatest{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    img{
-      margin: 0 auto;
-     }
-    .h2{
+    display: grid;
+    row-gap: 20px;
+    h2{
+      display: flex;
       font-size: $font-medium;
       font-family: $font-roboto-regular;
     }
