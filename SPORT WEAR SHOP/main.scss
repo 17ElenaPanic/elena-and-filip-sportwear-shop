@@ -278,22 +278,55 @@ header{
     justify-content: space-between; 
     height: 30px;
     padding: 0 50px;
+  .navBarContainer{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
     a{
-      padding-right: 10px;
+      position: relative;
+      font-family: $font-lato-bold;
+   
     }
+    .a-line{
+      position: relative;
+      font-family:$font-lato-bold;
+      &:after{
+        content:""; 
+        background: rgb(38, 34, 34); 
+        position: absolute; 
+        bottom: 0; 
+        right: -10px;
+        height: 60%; 
+        width: 2px;
+        height: 15px;
+      }
+    }
+  }
+    
+  
   }
   .secondNavBar{
     margin: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height:30px;
+    .secondNavSection{
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      a{
+        font-family: $font-lato-bold;
+      }
+    }
     .thirdNavSection{
       display: flex;
       justify-content: space-between;
-      width: 20%;
+      width: 18%;
+      align-items: center;
         form{
           background-color: $color-lightest-grey;
-          width: 130px;
+          width: 150px;
           border-radius: 30px;
           padding: 8px;
           .formContainer{
@@ -322,11 +355,11 @@ header{
 
 }
 .background-image-skiing{
-  margin-top: 20px;
+  // margin-top: 20px;
   background-image: url(../images/skiing.jpeg);
   background-size: cover;
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 .shopContainer{
   display: flex;
@@ -341,7 +374,8 @@ header{
   }
   p{
     text-align: center;
-    font-family: $font-lato-regular;
+    font-family: $font-lato-bold;
+    font-size: 20px;
   }
   .button-shop-container{
 
@@ -349,18 +383,20 @@ header{
     .btn-shop{
       background-color: $color-black;
       color: $color-white;
-      border-radius: 13px;
+      border-radius: 15px;
       width: 60px;
-      padding: 5px;
       font-family: $font-lato-bold;
+      font-size: $font-small;
+      height: 35px;
     }
     .btn-shop-kids{
       background-color: $color-black;
       color: $color-white;
-      border-radius: 13px;
-      width: 80px;
-      padding: 5px;
+      border-radius: 15px;
       font-family: $font-lato-bold;
+      font-size: $font-small;
+      width: 90px;
+      height: 35px;
     }
   }
 }
