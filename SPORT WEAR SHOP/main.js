@@ -7,6 +7,7 @@
  // Define the scroll amount (e.g., how many pixels to scroll)
  const scrollAmount = 200;
 
+
  // Function to update the button states based on the current scroll position
  function updateButtonStates() {
      const maxScrollLeft = galleryContainer.scrollWidth - galleryContainer.clientWidth;
