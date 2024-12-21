@@ -199,7 +199,14 @@ header .secondNavBar .thirdNavSection form .formContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-inline: 5px;
+  padding-inline: 10px;
+  cursor: pointer;
+}
+.latest-greatest-section .buttons-container button:hover {
+  color: #707072;
+}
+.latest-greatest-section .buttons-container button:disabled {
+  color: rgb(236, 235, 235);
 }
 .latest-greatest-section .latest-greatest-gallery {
   display: grid;

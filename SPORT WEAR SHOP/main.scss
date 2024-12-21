@@ -338,7 +338,14 @@ header{
      display: flex;
      justify-content: space-around;
      align-items: center;
-     padding-inline: 5px;
+     padding-inline: 10px;
+     cursor: pointer;
+     &:hover{
+      color: $color-light-grey;
+     }
+     &:disabled{
+      color: $color-lightest-grey;
+     }
     }
   }
   .latest-greatest-gallery{
