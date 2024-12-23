@@ -302,6 +302,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
   overflow-x: hidden;
   min-height: 100px;
   min-width: 100px;
+  border: none;
 }
 .section .gallery:hover {
   overflow-x: auto;
