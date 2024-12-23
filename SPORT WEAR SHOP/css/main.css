@@ -297,7 +297,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
   -moz-column-gap: 40px;
        column-gap: 40px;
   padding: 20px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .section .gallery:hover {
   overflow-x: auto;
