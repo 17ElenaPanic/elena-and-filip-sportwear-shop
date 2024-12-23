@@ -405,6 +405,8 @@ header{
 //Section Latest & Greatest
 .section{
   padding: 30px;
+  min-height: 100px;
+  min-width: 100px;
   .header-buttons-container{
    display: flex;
    flex-direction: row;
@@ -439,7 +441,9 @@ header{
     grid-template-columns: repeat(5, 1fr);
     column-gap: 40px;
     padding: 20px;
-    overflow: hidden;
+    overflow-x: hidden;
+    min-height: 100px;
+    min-width: 100px;
     &:hover{
       overflow-x: auto;
     }

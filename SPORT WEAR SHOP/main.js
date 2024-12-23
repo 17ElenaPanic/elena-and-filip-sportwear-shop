@@ -1,56 +1,56 @@
 //SCROLL BUTTONS LEFT - RIGHT START
  // Get the gallery container and buttons
- //const galleryContainer = document.getElementById('galleryContainer');
- //const scrollLeftButton = document.getElementById('scrollLeft');
- //const scrollRightButton = document.getElementById('scrollRight');
+ const scrollLeftButton = document.getElementById('leftBtn');
+ const scrollRightButton = document.getElementById('rightBtn');
  const galleryContainer= document.querySelector('.gallery')
- const scrollLeftButton = document.querySelector('.left-btn')
- const  scrollRightButton  = document.querySelector('.right-btn');
- // Define the scroll amount (e.g., how many pixels to scroll)
- const scrollAmount = 200;
- console.log(scrollRightButton)
+ const buttons = document.querySelectorAll('.btn');
+ 
 
-
- // Function to update the button states based on the current scroll position
- function updateButtonStates() {
-     const maxScrollLeft = galleryContainer.scrollWidth - galleryContainer.clientWidth;
-     const currentScrollLeft = galleryContainer.scrollLeft;
-
-     console.log(maxScrollLeft)
-
-     // Disable the left button if at the start
-     if (currentScrollLeft <= 0) {
-         scrollLeftButton.disabled = true;
-     } else {
-         scrollLeftButton.disabled = false;
-     }
-
-     // Disable the right button if at the end
-     if (currentScrollLeft >= maxScrollLeft - 80) {
-      
-         scrollRightButton.disabled = true;
-     } else {
-         scrollRightButton.disabled = false;
-     }
- }
-
- // Scroll left functionality
- scrollLeftButton.addEventListener('click', function() {
-     galleryContainer.scrollBy({
-         left: -scrollAmount,
-         behavior: 'smooth'
-     });
-     console.log("clicked")
-     updateButtonStates(); // Update button states after scrolling
- });
-
- // Scroll right functionality
- scrollRightButton.addEventListener('click', function() {
-     galleryContainer.scrollBy({
-         left: scrollAmount,
-         behavior: 'smooth'
-     });
-     console.log("cliked")
-     updateButtonStates(); // Update button states after scrolling
- });
- //SCROLL BUTTONS LEFT - RIGHT END
+// Function to update the state of the buttons based on the current scroll position
+function updateButtonStates(section) {
+    const gallery = section.querySelector('.gallery');
+    const leftButton = section.querySelector('[data-direction="left"]');
+    const rightButton = section.querySelector('[data-direction="right"]');
+  
+    // Get the current scroll position and the scrollable width of the gallery
+    const isAtLeft = gallery.scrollLeft === 0;
+    const isAtRight = gallery.scrollLeft + gallery.offsetWidth >= gallery.scrollWidth -100;
+  
+    // Update button states
+    leftButton.disabled = isAtLeft;
+    rightButton.disabled = isAtRight;
+  }
+  
+  // Function to handle button clicks (scroll left or right)
+  function handleButtonClick(event) {
+    const direction = event.target.getAttribute('data-direction');
+    const section = event.target.closest('section');
+    const gallery = section.querySelector('.gallery');
+    const scrollAmount = direction === 'left' ? -200 : 200; // Adjust scroll value if needed
+  
+    gallery.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  
+    // After scroll, update button states
+    updateButtonStates(section);
+  }
+  
+  // Add event listeners to all buttons
+  document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', handleButtonClick);
+  });
+  
+  // Also, update button states on page load and on scroll
+  document.querySelectorAll('section').forEach(section => {
+    // Initial state update on page load
+    updateButtonStates(section);
+  
+    // Update state when scrolling manually
+    const gallery = section.querySelector('.gallery');
+    gallery.addEventListener('scroll', () => {
+      updateButtonStates(section);
+    });
+  });
+  
