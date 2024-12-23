@@ -298,6 +298,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
        column-gap: 40px;
   padding: 20px;
   overflow-x: hidden;
+  min-height: 100px;
 }
 .section .gallery:hover {
   overflow-x: auto;

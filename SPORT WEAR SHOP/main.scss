@@ -440,6 +440,7 @@ header{
     column-gap: 40px;
     padding: 20px;
     overflow-x: hidden;
+    min-height: 100px;
     &:hover{
       overflow-x: auto;
     }
