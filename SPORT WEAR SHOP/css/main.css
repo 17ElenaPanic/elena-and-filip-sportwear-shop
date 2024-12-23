@@ -148,31 +148,33 @@ header .navBar .navBarContainer {
   width: 25%;
   display: flex;
   justify-content: space-between;
+  font-family: "Lato-Bold";
 }
 header .navBar .navBarContainer a {
   position: relative;
-  font-family: "Lato-Bold";
 }
 header .navBar .navBarContainer .a-line {
   position: relative;
-  font-family: "Lato-Bold";
 }
 header .navBar .navBarContainer .a-line:after {
   content: "";
   background: rgb(38, 34, 34);
   position: absolute;
   bottom: 0;
-  right: -10px;
+  right: -20px;
   height: 60%;
-  width: 2px;
+  width: 1.5px;
   height: 15px;
 }
 header .secondNavBar {
-  margin: 20px 0;
+  margin: 20px 10%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   height: 30px;
+  align-items: center;
+}
+header .secondNavBar .firstNavSection {
+  width: 30%;
 }
 header .secondNavBar .secondNavSection {
   width: 30%;
@@ -181,16 +183,17 @@ header .secondNavBar .secondNavSection {
 }
 header .secondNavBar .secondNavSection a {
   font-family: "Lato-Bold";
+  font-size: 16px;
 }
 header .secondNavBar .thirdNavSection {
   display: flex;
-  justify-content: space-between;
-  width: 18%;
+  justify-content: space-around;
   align-items: center;
+  width: 30%;
 }
 header .secondNavBar .thirdNavSection form {
   background-color: rgb(236, 235, 235);
-  width: 150px;
+  width: 170px;
   border-radius: 30px;
   padding: 8px;
 }
@@ -199,14 +202,22 @@ header .secondNavBar .thirdNavSection form .formContainer {
 }
 
 .holiday-discount-section {
-  height: 50px;
   padding: 10px;
   background-color: rgb(236, 235, 235);
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 60px;
+  height: 70px;
   justify-content: space-between;
+}
+.holiday-discount-section h2 {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  font-weight: 600;
+}
+.holiday-discount-section p {
+  font-family: "Lato-Regular";
+  font-weight: 500;
 }
 .holiday-discount-section p span {
   text-decoration: underline;
@@ -217,20 +228,21 @@ header .secondNavBar .thirdNavSection form .formContainer {
   background-image: url(../images/skiing.jpeg);
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 570px;
 }
 
 .shopContainer {
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 190px;
   justify-content: space-between;
   margin-top: 30px;
 }
 .shopContainer h2 {
-  font-size: 60px;
-  font-family: "Roboto-Bold";
+  font-size: 90px;
+  font-family: "Roboto-Black";
   text-align: center;
+  font-weight: 600;
 }
 .shopContainer p {
   text-align: center;
@@ -296,8 +308,8 @@ header .secondNavBar .thirdNavSection form .formContainer {
 .section .gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   padding: 20px;
   overflow-x: hidden;
   min-height: 100px;
@@ -316,8 +328,109 @@ header .secondNavBar .thirdNavSection form .formContainer {
   font-family: "Roboto-Regular";
 }
 
+.shopping-section {
+  height: 600px;
+  padding: 0 30px;
+}
+.shopping-section .btns-container {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-section .btns-container .scroll-btn-circle {
+  background-color: #dce2e2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+.shopping-section .btns-container .scroll-btn {
+  text-align: right;
+}
+.shopping-section .btns-container .h2-shopOurIcons {
+  padding: 30px;
+  font-family: "Roboto-Bold";
+  font-size: 25px;
+}
+.shopping-section .sneakers-gallery {
+  overflow-x: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+.shopping-section .sneakers-gallery :-webkit-scrollbar {
+  height: 15px;
+}
+.shopping-section .sneakers-gallery :-webkit-scrollbar-thumb {
+  background-color: #666969;
+}
+.shopping-section .sneakers-gallery .second-gallery {
+  display: inline-flex;
+  gap: 20px;
+}
+.shopping-section .sneakers-gallery .second-gallery .img-btn-container {
+  position: relative;
+  display: inline-block;
+}
+.shopping-section .sneakers-gallery .second-gallery .img-btn-container img {
+  display: block;
+}
+.shopping-section .sneakers-gallery .second-gallery .img-btn-container .btn-sneakers-type {
+  background-color: rgb(202, 195, 195);
+  color: #000;
+  position: absolute;
+  top: 340px;
+  left: 50px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Lato-Black";
+  font-size: 18px;
+}
+.shopping-section .sneakers-gallery:hover {
+  overflow-x: auto;
+}
+
 .h2-trending {
   font-family: "Roboto-Bold";
   font-size: 25px;
   padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.footer-container .footer-section {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .footer-section .first-footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-container .footer-section .first-footer-section .footer-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-container .footer-section .first-footer-section .heading-container h2 {
+  font-family: "Lato-Black";
+  font-size: 16px;
+}
+.footer-container .footer-section .first-footer-section .footer-elements {
+  font-family: "Lato-Regular";
+  font-size: 16px;
+  color: rgb(97, 89, 89);
+}
+.footer-container .last-footer-section {
+  font-family: "Lato-Regular";
+  font-size: 16px;
+  color: #707072;
 }/*# sourceMappingURL=main.css.map */

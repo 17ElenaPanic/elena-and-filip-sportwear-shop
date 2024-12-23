@@ -282,51 +282,55 @@ header{
     width: 25%;
     display: flex;
     justify-content: space-between;
+    font-family: $font-lato-bold;
     a{
       position: relative;
-      font-family: $font-lato-bold;
+
    
     }
     .a-line{
       position: relative;
-      font-family:$font-lato-bold;
+
       &:after{
         content:""; 
         background: rgb(38, 34, 34); 
         position: absolute; 
         bottom: 0; 
-        right: -10px;
+        right: -20px;
         height: 60%; 
-        width: 2px;
+        width: 1.5px;
         height: 15px;
       }
     }
   }
-    
-  
   }
   .secondNavBar{
-    margin: 20px 0;
+    margin: 20px 10%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between; 
     height:30px;
+    align-items: center;
+
+    .firstNavSection{
+      width: 30%;
+    }
     .secondNavSection{
       width: 30%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between; 
       a{
         font-family: $font-lato-bold;
+        font-size: $font-small;
       }
     }
     .thirdNavSection{
       display: flex;
-      justify-content: space-between;
-      width: 18%;
+     justify-content: space-around;
       align-items: center;
+      width: 30%;
         form{
           background-color: $color-lightest-grey;
-          width: 150px;
+          width: 170px;
           border-radius: 30px;
           padding: 8px;
           .formContainer{
@@ -338,15 +342,22 @@ header{
   }
 }
 .holiday-discount-section{
-  height: 50px;
+
   padding: 10px;
   background-color: $color-lightest-grey;
  text-align: center;
  display: flex;
  flex-direction: column;
- height: 60px;
+ height: 70px;
  justify-content: space-between;
+ h2{
+  font-family: $font-lato-regular;
+  font-size: 18px;
+  font-weight:600;
+ }
  p{
+  font-family: $font-lato-regular;
+  font-weight: 500;
   span{
     text-decoration: underline;
     font-family: $font-roboto-bold;
@@ -355,22 +366,23 @@ header{
 
 }
 .background-image-skiing{
-  // margin-top: 20px;
+
   background-image: url(../images/skiing.jpeg);
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 570px;
 }
 .shopContainer{
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 190px;
   justify-content: space-between;
   margin-top: 30px;
   h2{
-    font-size: $font-largest;
-    font-family: $font-roboto-bold;
+    font-size:90px;
+    font-family: $font-roboto-black;
     text-align: center;
+    font-weight: 600;
   }
   p{
     text-align: center;
@@ -439,7 +451,7 @@ header{
   .gallery{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 40px;
+    column-gap: 20px;
     padding: 20px;
     overflow-x: hidden;
     min-height: 100px;
@@ -460,10 +472,123 @@ header{
 }
 
 }
-//FOURTH SECTION TRENDING THIS WEEK
+//Third section Shop Our Icons - Elena
+.shopping-section{
+  height: 600px;
+  padding: 0 30px;
+  .btns-container{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    .scroll-btn-circle{
+      background-color: #dce2e2; 
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      margin: 0 10px; 
+    
+    }
+    .scroll-btn{
+      text-align: right;
+    }
+    .h2-shopOurIcons{
+      padding: 30px;
+      font-family: $font-roboto-bold;
+   font-size: $font-medium;
+    }
+  }
+  .sneakers-gallery{
+    overflow-x: hidden; 
+    white-space: nowrap; 
+    scroll-behavior: smooth; 
+    padding: 20px;
+  
+    :-webkit-scrollbar{
+      height: 15px;
+  
+    }
+    :-webkit-scrollbar-thumb{
+      background-color: #666969; 
+    }
+    .second-gallery{
+      display: inline-flex; 
+      gap: 20px;
+      .img-btn-container{
+        position: relative;
+        display: inline-block;
+   
+        img{
+          display: block;  
+        }
+        .btn-sneakers-type{
+          background-color: rgb(202, 195, 195);
+          color: $color-black;
+          position: absolute;
+          top: 340px;
+          left: 50px;
+          border-radius: 20px;
+          padding: 10px 20px;
+          font-family: $font-lato-black;
+          font-size: 18px;
+      
+        }
+        
+      }
+    }
+    &:hover{
+      overflow-x: auto;
+    }
+ 
+    }   
+}
+
+// FOURTH SECTION TRENDING THIS WEEK
   .h2-trending{
    font-family: $font-roboto-bold;
    font-size: $font-medium;
    padding: 20px;
   }
-//FOOTER
+//FOOTER - Elena
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  margin:30px;
+  .footer-section{
+ 
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+   
+    .first-footer-section{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    //  gap: 20px;
+    .footer-elements{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .heading-container{
+      h2{
+        font-family: $font-lato-black;
+        font-size: $font-small;
+      }
+    }
+    .footer-elements{
+      font-family: $font-lato-regular;
+      font-size: $font-small;
+      color: rgb(97, 89, 89);
+    }
+    }
+  }
+  .last-footer-section{
+    font-family: $font-lato-regular;
+      font-size: $font-small;
+      color: $color-light-grey;
+  }
+}
