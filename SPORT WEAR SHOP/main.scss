@@ -405,8 +405,7 @@ header{
 //Section Latest & Greatest
 .section{
   padding: 30px;
-  min-height: 100px;
-  min-width: 100px;
+  height: 700px;
   .header-buttons-container{
    display: flex;
    flex-direction: row;
@@ -442,8 +441,6 @@ header{
     column-gap: 40px;
     padding: 20px;
     overflow-x: hidden;
-    min-height: 100px;
-    min-width: 100px;
     border: none;
     &:hover{
       overflow-x: auto;
