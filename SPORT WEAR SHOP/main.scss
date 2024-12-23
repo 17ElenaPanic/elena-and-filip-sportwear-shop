@@ -439,7 +439,8 @@ header{
     grid-template-columns: repeat(5, 1fr);
     column-gap: 40px;
     padding: 20px;
-    overflow: hidden;
+    overflow-x: hidden;
+    min-height: 100px;
     &:hover{
       overflow-x: auto;
     }
