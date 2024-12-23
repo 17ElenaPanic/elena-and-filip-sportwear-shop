@@ -261,6 +261,8 @@ header .secondNavBar .thirdNavSection form .formContainer {
 
 .section {
   padding: 30px;
+  min-height: 100px;
+  min-width: 100px;
 }
 .section .header-buttons-container {
   display: flex;
@@ -299,6 +301,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
   padding: 20px;
   overflow-x: hidden;
   min-height: 100px;
+  min-width: 100px;
 }
 .section .gallery:hover {
   overflow-x: auto;
