@@ -53,4 +53,18 @@ function updateButtonStates(section) {
       updateButtonStates(section);
     });
   });
+
+  //Third section Shop our Icons
+  const galleryShopping = document.getElementById('gallery-container');
+
+
+// Function to scroll left
+function scrollingLeft() {
+    galleryShopping.scrollBy({ left: -400, behavior: 'smooth' }); // Scroll 200px left
+}
+
+// Function to scroll right
+function scrollingRight() {
+  galleryShopping.scrollBy({ left: 400, behavior: 'smooth' }); // Scroll 200px right
+}
   
