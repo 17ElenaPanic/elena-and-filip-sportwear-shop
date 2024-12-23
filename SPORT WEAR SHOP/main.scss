@@ -551,42 +551,52 @@ header{
    padding: 20px;
   }
 //FOOTER - Elena
-.footer-container{
-  display: flex;
-  justify-content: space-between;
-  margin:30px;
-  .footer-section{
- 
-    width: 50%;
+footer{
+  .footer-container{
     display: flex;
     justify-content: space-between;
-   
-    .first-footer-section{
+    margin:30px;
+    .footer-section{
+      width: 60%;
       display: flex;
-      flex-direction: column;
-      gap: 30px;
-    //  gap: 20px;
-    .footer-elements{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .heading-container{
-      h2{
-        font-family: $font-lato-black;
+      justify-content: space-between;
+      .first-footer-section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      //  gap: 20px;
+      .footer-elements{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .heading-container{
+        h2{
+          font-family: $font-lato-black;
+          font-size: $font-small;
+        }
+      }
+      .footer-elements{
+        font-family: $font-lato-regular;
         font-size: $font-small;
+        color: rgb(97, 89, 89);
+      }
       }
     }
-    .footer-elements{
+    .last-footer-section{
       font-family: $font-lato-regular;
-      font-size: $font-small;
-      color: rgb(97, 89, 89);
-    }
+        font-size: $font-small;
+        color: $color-light-grey;
     }
   }
-  .last-footer-section{
+  .sub-footer{
+    margin:50px 30px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
     font-family: $font-lato-regular;
-      font-size: $font-small;
-      color: $color-light-grey;
+    font-size: $font-small;
+    color: $color-light-grey;
   }
 }
+
