@@ -248,8 +248,8 @@ $color-lightest-grey:rgb(236, 235, 235);
 //FONT-SIZE
 $font-extra-small:13px;
 $font-small:16px;
-$font-medium:25px;
-$font-large:30px;
+$font-medium:20px;
+$font-large:25px;
 
 
 $font-extra-large:35px;
@@ -425,7 +425,7 @@ header{
   }
   .h2-latest-greatest{
    font-family: $font-roboto-bold;
-   font-size: $font-medium;
+   font-size: $font-large;
    padding: 20px;
   }
   .buttons-container{
@@ -450,7 +450,7 @@ header{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 20px;
-    padding: 20px;
+    padding: 10px 20px;
     overflow-x: hidden;
     border: none;
     &:hover{
@@ -544,19 +544,24 @@ header{
 }
 
 // FOURTH SECTION TRENDING THIS WEEK
+
   .h2-trending{
    font-family: $font-roboto-bold;
-   font-size: $font-medium;
+   font-size: $font-large;
    padding: 20px;
   }
  .h2-grey{
   color: $color-light-grey;
+  font-size: $font-small;
+  margin: 5px 0 15px;
  }
  .p-card{
   color: $color-black;
   font-size: $font-medium;
   font-weight: bold;
  }
+
+
 //FOOTER - Elena
 footer{
   .footer-container{

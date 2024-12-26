@@ -308,7 +308,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
   grid-template-columns: repeat(5, 1fr);
   -moz-column-gap: 20px;
        column-gap: 20px;
-  padding: 20px;
+  padding: 10px 20px;
   overflow-x: hidden;
   border: none;
 }
@@ -321,7 +321,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
 }
 .section .gallery .card-container h2 {
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto-Regular";
 }
 
@@ -351,7 +351,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
 .shopping-section .btns-container .h2-shopOurIcons {
   padding: 30px;
   font-family: "Roboto-Bold";
-  font-size: 25px;
+  font-size: 20px;
 }
 .shopping-section .sneakers-gallery {
   overflow-x: hidden;
@@ -399,11 +399,13 @@ header .secondNavBar .thirdNavSection form .formContainer {
 
 .h2-grey {
   color: #707072;
+  font-size: 16px;
+  margin: 5px 0 15px;
 }
 
 .p-card {
   color: #000;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
