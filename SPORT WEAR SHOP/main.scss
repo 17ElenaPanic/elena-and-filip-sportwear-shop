@@ -430,15 +430,14 @@ header{
   }
   .buttons-container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    button{
+    width: 100px;
+    .btn{
      display: flex;
-     justify-content: space-around;
      align-items: center;
-     padding-inline: 10px;
      cursor: pointer;
+     border-radius: 50%;
      &:hover{
       color: $color-light-grey;
      }
@@ -550,6 +549,14 @@ header{
    font-size: $font-medium;
    padding: 20px;
   }
+ .h2-grey{
+  color: $color-light-grey;
+ }
+ .p-card{
+  color: $color-black;
+  font-size: $font-medium;
+  font-weight: bold;
+ }
 //FOOTER - Elena
 footer{
   .footer-container{
