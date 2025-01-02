@@ -5,20 +5,23 @@
     <meta name="description" content="Professional web developer specializing in creating responsive websites, modern web applications, and user-friendly designs. Explore my portfolio to see my projects and expertise in front-end and back-end development.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="/css/main.css">
-    <link type="icon" rel="icon" href="icon">
+    <link type="icon" rel="icon" href="images/sport.ico">
     <!-- Linkovi za fontovite -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" href="../images/bgImage.webp" as="image">
     <title>SPORT WEAR</title>
 </head>
 <body>
-    <!-- ELENA => HEADER - FIRST SECTION  -->
+    <!-- ELENA => HEADER - SECTION START  -->
     <header>
         <nav class="navBar">
+            <span class="close-burger-menu-btn"><img src="images/close-burger-menu.svg" width="24" height="24"
+                alt="close burger menu"></span>
             <div class="logoContainer">
-                <a class="logoImg" href=""><img src="images/logo.png" alt="logo" width="50" height="40"></a>
+                <a class="logoImg" href="index.html"><img src="images/logo.svg" alt="logo" width="50" height="40"></a>
             </div>
             <div class="navBarContainer">
                 <a class="a-line" href="">Find a Store</a>
@@ -27,9 +30,11 @@
                 <a href="">Sign In</a>
             </div>
         </nav>
+        <span class="burger-menu-btn"><img src="images/burger-menu.svg" width="22" height="30" alt="burger menu"></span>
+        <div class="overlay"></div>
         <nav class="secondNavBar">
             <div class="firstNavSection">
-                <img src="images/nike.ico" alt="nike logo" width="60" height="45">
+                <img src="images/nike.ico" alt="nike logo" width="60" height="60">
             </div>
             <div class="secondNavSection">
                 <a href="">New & Featured</a>
@@ -41,19 +46,20 @@
             <div class="thirdNavSection">
                 <form action="">
                     <div class="formContainer">
-                        <img src="images/search-icon.ico" alt="" width="20" height="20">
+                        <img src="images/search-icon.ico" alt="search icon" width="20" height="20">
                         <input type="text" placeholder="Search">
                     </div>
                 </form>
                 <div class="icon-container">
-                <img src="images/heart-icon.ico" alt="" width="25" height="25">
-                <img src="images/locked-icon.ico" alt="" width="25" height="25">
+                <img src="images/heart-icon.ico" alt="heart icon" width="25" height="25">
+                <img src="images/locked-icon.ico" alt="locked icon" width="25" height="25">
             </div>
             </div>
         </nav>
     </header>
+      <!-- ELENA => HEADER - SECTION END  -->
     <main>
-        <!-- ELENA => FIRST SECTION - HOLIDAY RETURN EXTENSION -->
+        <!-- ELENA => FIRST SECTION - HOLIDAY RETURN EXTENSION START -->
         <div class="holiday-discount-section">
             <h2 class="holiday-return-heading">HOLIDAY RETURN EXTENSION</h2>
             <p>Nike purchases made between 1 November 2024 and 31 December 2024 have an extended 60-day return policy.<span>Learn More Join Us</span></p>
@@ -67,6 +73,8 @@
                    <button class="btn-shop-kids">Shop Kids'</button>
                </div>
            </div>
+           <!-- ELENA => FIRST SECTION - HOLIDAY RETURN EXTENSION END -->
+
      <!-- FILIP => SECOND SECTION - LATEST & GREATEST START-->
         <section class="section" id="section1">
          <div class="header-buttons-container">
@@ -82,74 +90,73 @@
         </div>
             <div class="gallery" >
                 <div class="card-container">
-                    <img src="images/latest1.jpg" alt="plant1" width="300" height="400"/>
+                    <img src="images/latest1.webp" alt="sneakers" width="300" height="450" loading="lazy"/>
                     <h2>Just In:Shox 04</h2>
                 </div>
                 <div class="card-container">
-                    <img src="images/latest2.jpg" alt="plant2" width="300" height="400"/>
+                    <img src="images/latest2.webp" alt="sneakers" width="300" height="450"  loading="lazy"/>
                     <h2>Nike woman</h2>
                 </div>
                 <div class="card-container">
-                    <img src="images/latest3.jpg" alt="plant3" width="300" height="400"/>
+                    <img src="images/latest3.webp" alt="sneakers" width="300" height="450"  loading="lazy"/>
                     <h2>Winter wear</h2>
                 </div>
                 <div class="card-container">
-                    <img src="images/latest4.jpg" alt="plant1" width="300" height="400"/>
+                    <img src="images/latest4.webp" alt="sneakers" width="300" height="450"  loading="lazy"/>
                     <h2>Nike Air Max</h2>
                 </div>
                 <div class="card-container">
-                    <img src="images/latest5.jpg" alt="plant1"width="300" height="400"/>
+                    <img src="images/latest5.webp" alt="sneakers"width="300" height="450"  loading="lazy"/>
                     <h2>Just In:Shox 04</h2>
                 </div>
             </div>
         </section>
      <!-- FILIP => SECOND SECTION - LATEST & GREATEST END-->
 
-     <!-- ELENA => THIRD SECTION Shop Our Icons -->
- 
+     <!-- ELENA => THIRD SECTION SHOP OUR ICONS START -->
        <div class="shopping-section">
         <div class="btns-container">
-            <h2 class="h2-shopOurIcons">Shop Our Icons</h2>
+            <h2 class="h2-shopOurIcons">Shop our icons</h2>
             <div class="buttons">
-          <button class="scroll-btn" onclick="scrollingLeft()"><img src="images/arrow-less-than.png" alt="" width="40" height="40"></button>
-          <button class="scroll-btn-circle scroll-btn" onclick="scrollingRight()"><img src="images/greater-than.png" alt="" width="40" height="40"></button>
+          <button class="scroll-btn scroll-hover" id="arrow-left" onclick="scrollingLeft(); toggleCircle(this)"><img src="images/arrow-less-than.png" alt="arrow left" width="40" height="40"></button>
+          <button class="scroll-btn-circle scroll-btn" onclick="scrollingRight()"><img src="images/greater-than.png" alt="arrow right" width="40" height="40"></button>
         </div>
         </div>
         <div class="sneakers-gallery" id="gallery-container">
             <div class="second-gallery">
-                <div class="img-btn-container">    
-            <img src="images/shopOurIcons1.png" alt="nike sneakers air max" width="500" height="430">
-
+                <div class="img-btn-container">  
+            <img src="images/shopOurIcons1.webp" alt="nike sneakers air max" width="320" height="320" loading="lazy">
             <button class="btn-sneakers-type">Air Max</button>
         </div>
         <div class="img-btn-container">
-            <img src="images/shopOurIcons2.png" alt="nike sneakers air y2K"  width="500" height="430px">
+            <img src="images/shopOurIcons2.webp" alt="nike sneakers air y2K" width="320" height="320" loading="lazy">
             <button class="btn-sneakers-type">Y2K</button>
         </div>
         <div class="img-btn-container">
-            <img src="images/shopOurIcons3.png" alt="nike sneakers air y2K"  width="500" height="430px">
+            <img src="images/shopOurIcons3.webp" alt="nike sneakers air y2K"  width="320" height="320" loading="lazy">
             <button class="btn-sneakers-type">Air Force 1</button>
         </div>
         <div class="img-btn-container">
-            <img src="images/shopOurIcons4.png" alt="nike sneakers air y2K"  width="500" height="430px">
+            <img src="images/shopOurIcons4.webp" alt="nike sneakers air y2K"  width="320" height="320" loading="lazy">
             <button class="btn-sneakers-type">Dunk</button>
         </div>
         <div class="img-btn-container">
-            <img src="images/shopOurIcons5.png" alt="nike sneakers air y2K"  width="500" height="430px">
+            <img src="images/shopOurIcons5.webp" alt="nike sneakers air y2K"  width="320" height="320" loading="lazy">
             <button class="btn-sneakers-type">Air Jordan</button>
         </div>
         <div class="img-btn-container">
-            <img src="images/shopOurIcons6.png" alt="nike sneakers air y2K"  width="500" height="430px">
+            <img src="images/shopOurIcons6.webp" alt="nike sneakers air y2K"  width="320" height="320" loading="lazy">
             <button class="btn-sneakers-type">Pegasus</button>
         </div>
         <div class="img-btn-container">
-            <img src="images/shopOurIcons7.png" alt="nike sneakers air y2K"  width="500" height="430px">
+            <img src="images/shopOurIcons7.webp" alt="nike sneakers air y2K" width="320" height="320" loading="lazy">
             <button class="btn-sneakers-type">Metcon</button>
         </div>
         </div>
         </div>
     </div>
-</div>
+     <!-- ELENA => THIRD SECTION SHOP OUR ICONS END -->
+
      <!-- FILIP => FOURTH SECTION - TRENDING THIS WEEK  START-->
      <section class="section" id="section2">
         <div class="header-buttons-container">
@@ -160,24 +167,24 @@
            </div>
        </div>
            <div class="gallery" >
-               <div class="card-container">
-                   <img src="images/shopOurIcons1.png" alt="plant1" width="300" height="400"/>
+               <div class="card-container box-container">
+                   <img src="images/trending1.webp" alt="sneakers" width="420" height="420"/>
                 <div class="text-container">
                    <h2>Nike Tech</h2>
                    <h2 class="h2-grey">Mens Full-Zip Hoodie</h2>
                    <p class="p-card">$250</p>
                 </div>
                </div>
-               <div class="card-container">
-                   <img src="images/shopOurIcons2.png" alt="plant2" width="300" height="400"/>
+               <div class="card-container box-container">
+                   <img src="images/trending2.webp" alt="sneakers" width="420"  height="420"/>
                    <div class="text-container">
                    <h2>Nike Zoom Woman</h2>
                    <h2 class="h2-grey">Woman Shoes</h2>
                    <p class="p-card">$150</p>
                    </div>
                </div>
-               <div class="card-container">
-                   <img src="images/shopOurIcons3.png" alt="plant3" width="300" height="400"/>
+               <div class="card-container box-container">
+                   <img src="images/trending3.webp" alt="sneakers"   width="420"  height="420"/>
                    <div class="text-container">
                    <h2>Nike Air Max Zoom</h2>
                    <h2 class="h2-grey">Men's Shoes</h2>
@@ -185,15 +192,15 @@
                    </div>
                </div>
                <div class="card-container">
-                   <img src="images/shopOurIcons4.png" alt="plant1" width="300" height="400"/>
+                   <img src="images/trending4.webp" alt="sneakers"  width="420"  height="420"/>
                    <div class="text-container">
                    <h2>Jordan Spizike Low</h2>
                    <h2 class="h2-grey">Men's Shoes</h2>
                    <p class="p-card">$220</p>
                    </div>
                </div>
-               <div class="card-container">
-                   <img src="images/shopOurIcons5.png" alt="plant1"width="300" height="400"/>
+               <div class="card-container box-container">
+                   <img src="images/trending5.webp" alt="sneakers"  width="420"  height="420"/>
                    <div class="text-container">
                    <h2>Nike Air Force</h2>
                    <h2 class="h2-grey">Men's Shoes</h2>
@@ -202,10 +209,9 @@
                </div>
            </div>
        </section>
-     <!-- FILIP => FOURTH SECTION - TRENDING THIS WEEK  END-->
-      
+     <!-- FILIP => FOURTH SECTION - TRENDING THIS WEEK  END-->    
     </main>
-    <!-- ELENA => FOOTER - FIFTH SECTION -->
+    <!-- ELENA => FOOTER - SECTION START -->
     <footer>
         <div class="footer-container">
     <div class="footer-section">
@@ -266,7 +272,7 @@
         <a href="">Privacy & Cookie Settings Elena</a>
     </div>
     </footer>
+     <!-- ELENA => FOOTER - SECTION END -->
     <script src="main.js"></script>
-    
 </body>
 </html>
