@@ -161,13 +161,58 @@ header .navBar .navBarContainer .a-line:after {
   background: rgb(38, 34, 34);
   position: absolute;
   bottom: 0;
-  right: -20px;
+  right: -10px;
   height: 60%;
-  width: 1.5px;
+  width: 2px;
   height: 15px;
 }
+@media (min-width: 992px) {
+  header .burger-menu-btn,
+  header .close-burger-menu-btn {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  header .navBarContainer {
+    flex-direction: column;
+    position: absolute;
+    justify-content: start;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    background-color: #fff;
+    width: 30%;
+    z-index: 20;
+    padding: 15px;
+    align-items: center;
+    transition: right 0.5s ease-in-out;
+  }
+  header .navBarContainer a {
+    margin: 15px;
+  }
+  header .navBarContainer a:first-of-type {
+    margin-top: 30px;
+  }
+  header .navBarContainer .close-burger-menu-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  header .js-burger-menu {
+    transition: right 0.5s ease-in-out;
+    right: 0;
+  }
+}
+@media (max-width: 1023.98px) {
+  header .navBar .navBarContainer {
+    width: 40%;
+  }
+  header .secondNavBar .secondNavSection {
+    width: 35%;
+  }
+}
 header .secondNavBar {
-  margin: 20px 10%;
+  margin: 20px 5%;
   display: flex;
   justify-content: space-between;
   height: 30px;
@@ -201,6 +246,22 @@ header .secondNavBar .thirdNavSection form .formContainer {
   display: flex;
 }
 
+.overlay {
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.75;
+  transition: width 0.5s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+.js-overlay {
+  width: 100vw;
+  transition: width 0.5s ease-in-out;
+}
+
 .holiday-discount-section {
   padding: 10px;
   background-color: rgb(236, 235, 235);
@@ -225,10 +286,14 @@ header .secondNavBar .thirdNavSection form .formContainer {
 }
 
 .background-image-skiing {
-  background-image: url(../images/skiing.jpeg);
+  background-image: url(../images/bgImage.webp);
   background-size: cover;
   width: 100%;
   height: 570px;
+}
+
+.background-image-skiing.loaded {
+  background-image: url(../images/bgImage.webp);
 }
 
 .shopContainer {
@@ -273,7 +338,7 @@ header .secondNavBar .thirdNavSection form .formContainer {
 
 .section {
   padding: 30px;
-  height: 700px;
+  height: 650px;
 }
 .section .header-buttons-container {
   display: flex;
@@ -326,15 +391,14 @@ header .secondNavBar .thirdNavSection form .formContainer {
 }
 
 .shopping-section {
-  height: 600px;
-  padding: 0 30px;
+  height: 500px;
+  padding: 30px;
 }
 .shopping-section .btns-container {
-  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
 }
-.shopping-section .btns-container .scroll-btn-circle {
+.shopping-section .btns-container .buttons .scroll-btn-circle {
   background-color: #dce2e2;
   color: #fff;
   border: none;
@@ -345,13 +409,37 @@ header .secondNavBar .thirdNavSection form .formContainer {
   transition: background-color 0.3s;
   margin: 0 10px;
 }
-.shopping-section .btns-container .scroll-btn {
+.shopping-section .btns-container .buttons .scroll-btn {
   text-align: right;
 }
+.shopping-section .btns-container .buttons .scroll-hover {
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.shopping-section .btns-container .buttons .scroll-hover.active {
+  background-color: #dce2e2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+.shopping-section .btns-container .buttons .scroll-hover:hover {
+  background-color: #dce2e2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
 .shopping-section .btns-container .h2-shopOurIcons {
-  padding: 30px;
   font-family: "Roboto-Bold";
-  font-size: 20px;
+  font-size: 25px;
+  padding: 20px;
 }
 .shopping-section .sneakers-gallery {
   overflow-x: hidden;
@@ -372,20 +460,27 @@ header .secondNavBar .thirdNavSection form .formContainer {
 .shopping-section .sneakers-gallery .second-gallery .img-btn-container {
   position: relative;
   display: inline-block;
+  width: 440px;
+  height: 340px;
+  background-color: rgb(175, 175, 175);
 }
 .shopping-section .sneakers-gallery .second-gallery .img-btn-container img {
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .shopping-section .sneakers-gallery .second-gallery .img-btn-container .btn-sneakers-type {
-  background-color: rgb(202, 195, 195);
+  background-color: white;
   color: #000;
   position: absolute;
-  top: 340px;
+  top: 250px;
   left: 50px;
   border-radius: 20px;
   padding: 10px 20px;
   font-family: "Lato-Black";
-  font-size: 18px;
+  font-size: 15px;
 }
 .shopping-section .sneakers-gallery:hover {
   overflow-x: auto;
@@ -409,10 +504,21 @@ header .secondNavBar .thirdNavSection form .formContainer {
   font-weight: bold;
 }
 
+.gallery .box-container {
+  position: relative;
+  display: inline-block;
+  width: 440px;
+  height: 400px;
+  background-color: rgb(225, 221, 221);
+}
+.gallery .box-container img {
+  margin-left: 10px;
+}
+
 footer .footer-container {
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  padding: 100px 40px;
 }
 footer .footer-container .footer-section {
   width: 60%;
@@ -447,8 +553,8 @@ footer .sub-footer {
   margin: 50px 30px;
   width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: "Lato-Regular";
-  font-size: 16px;
+  font-size: 13px;
   color: #707072;
 }/*# sourceMappingURL=main.css.map */

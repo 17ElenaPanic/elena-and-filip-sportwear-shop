@@ -54,17 +54,51 @@ function updateButtonStates(section) {
     });
   });
 
-  //Third section Shop our Icons
+  //THIRD SECTION -  Shop our Icons - Elena
   const galleryShopping = document.getElementById('gallery-container');
 
 
 // Function to scroll left
 function scrollingLeft() {
     galleryShopping.scrollBy({ left: -400, behavior: 'smooth' }); // Scroll 200px left
+    console.log("PElenka")
 }
 
+
+//Button on click circle
+function toggleCircle(element) {
+  // const element = document.getElementById('arrow-left');
+  console.log("Elenooooooooo")
+  element.classList.toggle('active');
+}
 // Function to scroll right
 function scrollingRight() {
+
   galleryShopping.scrollBy({ left: 400, behavior: 'smooth' }); // Scroll 200px right
 }
+
+  //HEADER SECTION  - BURGER MENU
+  const burgerMenuBtn = document.querySelector(".burger-menu-btn");
+  const burgerMenuBtnClose = document.querySelector(".close-burger-menu-btn");
+  const nav = document.querySelector(".navBarContainer");
+  const body = document.querySelector(".body");
+  const overlay = document.querySelector(".overlay");
+  
+  burgerMenuBtn.addEventListener("click", () => {
+    nav.classList.add("js-burger-menu");
+    overlay.classList.add("js-overlay");
+    body.style.overflow = "hidden";
+  });
+  
+  burgerMenuBtnClose.addEventListener("click", () => {
+    nav.classList.remove("js-burger-menu");
+    overlay.classList.remove("js-overlay");
+    body.style.overflow = "auto";
+  });
+  
+  overlay.addEventListener("click", () => {
+    nav.classList.remove("js-burger-menu");
+    overlay.classList.remove("js-overlay");
+    body.style.overflow = "auto";
+  });
   
